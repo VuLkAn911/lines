@@ -4,42 +4,42 @@ import "fmt"
 
 func main() {
 	// //sub1
-	// const Author = "Abylai"
-	// text := "asdasd"
+	const Author = "Abylai"
+	text := "asdasd"
 
-	// fmt.Printf("Автор %s Написал:%s ", Author, text)
+	fmt.Printf("Автор %s Написал:%s ", Author, text)
 
-	// fmt.Println(len(text))
+	fmt.Println(len(text))
 
 	// // sub2
-	// message := ""
+	message := ""
 
-	// if message == "" {
-	// 	fmt.Println("Строка пуста")
-	// } else {
-	// 	fmt.Println("Строка не пуста")
-	// }
+	if message == "" {
+		fmt.Println("Строка пуста")
+	} else {
+		fmt.Println("Строка не пуста")
+	}
 
-	// fmt.Println(len(message))
+	fmt.Println(len(message))
 
 	// // sub3
-	// var input string
+	var input string
 
-	// fmt.Scan(&input)
+	fmt.Scan(&input)
 
-	// if len(input) < 5 {
-	// 	fmt.Println("Слишком короткое слово")
-	// } else if len(input) <= 5 && len(input) < 10 {
-	// 	fmt.Println("Нормально")
-	// } else {
-	// 	fmt.Println("Слишком длино")
-	// }
+	if len(input) < 5 {
+		fmt.Println("Слишком короткое слово")
+	} else if len(input) <= 5 || len(input) < 10 {
+		fmt.Println("Нормально")
+	} else {
+		fmt.Println("Слишком длино")
+	}
 
 	//sub 4
 
 	word := "Word"
 
-	fmt.Println(string(word[0]), string(word[3]))
+	fmt.Println(string(word[0]), word[len(word)-1])
 
 	for i, v := range word {
 		fmt.Println(i, string(v))
