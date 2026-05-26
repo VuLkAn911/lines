@@ -29,7 +29,7 @@ func main() {
 
 	if len(input) < 5 {
 		fmt.Println("Слишком короткое слово")
-	} else if len(input) <= 5 || len(input) < 10 {
+	} else if len(input) >= 5 || len(input) < 10 {
 		fmt.Println("Нормально")
 	} else {
 		fmt.Println("Слишком длино")
